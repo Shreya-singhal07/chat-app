@@ -6,7 +6,7 @@ Chit-Chat App is a real-time messaging application built using the MERN stack (M
 
 - Real-time messaging with Socket.IO
 - Individual and group chat functionality with admin access functionalities.
-- User authentication and authorization using JWT and bcrypt
+- User authentication and authorization using JWT
 - Responsive design using Material-UI
 - User profile management
 - Real-time Typing indicators to show when a user is typing.
@@ -17,8 +17,21 @@ Chit-Chat App is a real-time messaging application built using the MERN stack (M
 - **Backend:** Node.js, Express.js
 - **Database:** MongoDB
 - **Real-time Communication:** Socket.IO
-- **Authentication:** JWT (JSON Web Tokens), bcrypt
-- **Other Libraries:** Axios, Lottie
+- **Authentication:** JWT (JSON Web Tokens)
+
+## Challenges Faced:
+
+- Scaling Issues: Handling multiple concurrent users without losing performance, especially in larger groups.
+- JWT Expiry & Token Refreshing: Dealing with token expiry and ensuring a smooth experience for users when tokens expired, including implementing a refresh token mechanism.
+
+## Solution :
+
+SCALING : 
+- Implemented Socket.IO rooms to manage connections and group-specific messaging more effectively.
+- Used load balancing on the backend to handle traffic spikes.
+
+JWT AUTH:
+- Added JWT refresh tokens and automatic session renewal to ensure that users stayed authenticated without interruption.
 
 <img width="1430" alt="Screenshot 2025-04-18 at 4 07 20 PM" src="https://github.com/user-attachments/assets/17b6bb12-5cf8-4dd6-a264-b3745120e432" />
 <img width="1430" alt="Screenshot 2025-04-18 at 4 31 09 PM" src="https://github.com/user-attachments/assets/d882c412-bcc3-4046-9ea4-51f13a571afd" />
